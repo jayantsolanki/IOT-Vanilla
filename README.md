@@ -1,3 +1,4 @@
+
 IOT control of the Irrigation Valves- PHP based Website
 ##files' description
 * **index.php** - It is the home page and calls control.php through AJAX
@@ -43,3 +44,7 @@ IOT control of the Irrigation Valves- PHP based Website
 		* battery- esp
 		* macid- esp
 		* moisture- esp/moisture
+=======
+# IOT-Vanilla
+Web app for controlling and managing internet based esp8266 wifi module.
+
