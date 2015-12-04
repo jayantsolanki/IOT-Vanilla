@@ -5,7 +5,7 @@
 *File name: subscribe.php
 *Author: Jayant Solanki
 *Runs continously in cli mode ,
-*subscribing to esp topic for getting macid from esp modules
+*subscribing to esp topic for getting macid from esp modules and also adding new found device
 */
 //include 'iotdb.php';
 require(__DIR__ . '/spMQTT.class.php');
