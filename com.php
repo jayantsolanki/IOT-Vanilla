@@ -55,7 +55,7 @@ $results=mysql_query($query);
 				//echo "</br>".$query;
 				if(!mysql_query($query,mysql_connect($dbhost, $dbuser, $dbpass)))
 					echo "UPDATE failed: $query<br/>".mysql_error()."<br/><br/>";
-				$query= "DELETE FROM tasks where item='$macid'";
+				$query= "DELETE FROM tasks where macid='$macid'";
 				if(!mysql_query($query,mysql_connect($dbhost, $dbuser, $dbpass)))
 					echo "UPDATE failed: $query<br/>".mysql_error()."<br/><br/>";
 				
@@ -125,7 +125,7 @@ $results=mysql_query($query);
 function command($macid,$action) //for sending mqtt commands
 {
 
-$mqtt = new spMQTT('tcp://127.0.0.1:1883/');
+$mqtt = new spMQTT('tcp://10.129.28.181:1883/');
 $connected = $mqtt->connect();
 if (!$connected) {
     die("<span class='error'> Mosca MQTT Server is Offline\n</span>");

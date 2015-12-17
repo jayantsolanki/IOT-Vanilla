@@ -10,7 +10,7 @@
 */
 require(__DIR__ . '/spMQTT.class.php');
 
-$mqtt = new spMQTT('tcp://127.0.0.1:1883/');
+$mqtt = new spMQTT('tcp://10.129.28.181:1883/');
 
 spMQTTDebug::Enable();
 

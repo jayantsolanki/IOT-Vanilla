@@ -22,11 +22,11 @@ if(isset($_GET['grp']))
 	echo "</br></br><span style='color:#3B5998;font-weight:normal;'>Duration:(mm)</span></br>";
 
 	echo "Mins:<select id='duration' name='duration'>";
-	$j=5; 
+	$j=1; 
 	while($j<=60)
 	{
 	echo "<option value='$j'>$j</option>";
-	$j=$j+5;
+	$j=$j+1;
 	} 
 	echo "</select><hr>";
 	
