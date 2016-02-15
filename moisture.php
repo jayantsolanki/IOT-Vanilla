@@ -54,7 +54,7 @@ function default_subscribe_callback($mqtt, $topic, $com) {
 	$dbhost  = 'localhost';    //bottleneck for me,, included file cant work
 	$dbname  = 'IOT'; 
 	$dbuser  = 'root';    
-	$dbpass  = 'jayant123';    
+	$dbpass  = 'kygh012xt';    
 	$macid   =substr($com,0,17);
 	$moval = substr($com,17);
 	mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());

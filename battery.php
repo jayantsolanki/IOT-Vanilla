@@ -10,7 +10,7 @@
 */
 require(__DIR__ . '/spMQTT.class.php');
 
-$mqtt = new spMQTT('tcp://10.129.28.181:1883/');
+$mqtt = new spMQTT('tcp://10.129.28.118:1883/');
 
 spMQTTDebug::Enable();
 
@@ -44,7 +44,7 @@ function default_subscribe_callback($mqtt, $topic, $com) {
 	$dbhost  = 'localhost';    //bottleneck for me,, included file cant work
 	$dbname  = 'IOT'; 
 	$dbuser  = 'root';    
-	$dbpass  = 'jayant123';    
+	$dbpass  = 'kygh012xt';    
 	$macid   =substr($com,0,17);
 	$batstatus = substr($com,17);
 	mysql_connect($dbhost, $dbuser, $dbpass) or die(mysql_error());

@@ -59,7 +59,7 @@ if($bat!=NULL)
 function command($macid,$action) //for sending mqtt commands
 	{
 		//$mqtt->setAuth('sskaje', '123123');
-		$mqtt = new spMQTT('tcp://10.129.28.181:1883/');
+		$mqtt = new spMQTT('tcp://10.129.28.118:1883/');
 		$connected = $mqtt->connect();
 		if (!$connected) 
 			{
